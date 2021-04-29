@@ -1,0 +1,100 @@
+text {
+	color: black;
+	font-family: sans-serif;
+}
+html {
+	background-color:whitesmoke;
+}
+#Archive {
+	border-bottom: 3px solid white;
+	text-align: center;
+}
+#wiki:hover {
+	font-size: 30px;
+}
+#info:hover {
+	font-size: 30px;
+}
+#main:hover {
+	font-size: 30px;
+}
+blockquote {
+	text-align: center;
+}
+#navigation {
+	text-align: center;
+	border-bottom: 3px solid white;
+	margin: auto;
+}
+.sign {
+	border: 2px solid white;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: white;
+}
+#kino1 {
+	border: 2px solid white;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+a {
+	color: black;
+	font-size: 25px;
+}
+#wiki {
+	border: 0px solid;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+#main {
+	border: 0px solid;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+.sign2 {
+	border: 2px solid white;
+	float: right;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: white;
+}
+.heading {
+	border-top: 2px solid white;
+}
+#sign1 {
+	border: 2px solid white;
+	float: right;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: white;
+}
+.picture {
+	border: 2px solid white;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background-color: white;
+}
+#kino2 {
+	border: 2px solid white;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.audio {
+	border: 2px solid white;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: white;
+}
+#quote{
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+}
+.quote-sign {
+	border: 0px solid white;
+	text-align: right;
+}

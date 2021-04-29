@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+body{
+background-image:url(../images/bg_fon.jpg);
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;}
+
+div{
+display: flex;
+flex-wrap: wrap;
+}
+
+li {
+    width: 18em;
+    height: 34em;
+    border: 1px solid white;
+    list-style: none;
+    margin-left: 1em;
+    margin-right: 0.2em;
+    margin-top: 1em;
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+
+#navigation {
+	text-align: center;
+	border-bottom: 3px solid white;
+	margin: auto;
+}

@@ -1,0 +1,537 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+	font-family: 'Basis';
+    font-weight: medium;
+    src: url(fonts/basis_medium.woff);
+}
+
+@font-face {
+	font-family: 'Basis';
+    font-weight: normal;
+    src: url(fonts/basis_regular.woff);
+}
+
+@font-face {
+	font-family: 'William';
+    font-weight: normal;
+    src: url(fonts/william.woff);
+}
+
+html {
+	min-height: 100vh;
+}
+
+body {
+	min-height: 100vh;
+	font-family: 'Basis';
+	line-height: 1.4;
+	-webkit-font-smoothing: antialiased;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.basis {
+	font-family: 'Basis';
+	font-weight: normal;
+}
+
+.william {
+	font-family: 'William';
+	font-weight: normal;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	padding: 20px 40px;
+	height: 70px;
+	margin-bottom: 70px;
+}
+
+.logo {
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.bar {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.bar a {
+	display: inline-block;
+	margin: 0 20px;
+	transition: opacity 0.5s ease;
+}
+
+.bar a:hover {
+	opacity: 0.3;
+}
+
+.active {
+	font-size: 30px;
+	border-bottom: 1px black solid;
+}
+
+.content {
+	max-width: 1200px;
+	font-family: 'William';
+	line-height: 1.4;
+	margin: 0 auto;
+}
+
+.coverImage {
+	display: block;
+	margin: 40px auto 5px auto;
+	width: 100%;
+	max-width: 1200px;
+	height: auto;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: background-color 0.5s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bgImage {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../images/DSC_1792.jpg);
+	background-size: cover;
+	background-position: center;
+	display: none;
+}
+
+.overlay:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.sectionTitle {
+	width: 80%;
+	font-family: 'William';
+	font-size: 84px;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 1;
+}
+
+.sectionSubTitle {
+	font-family: 'William';
+	font-size: 30px;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.imageC {
+	font-size: 12px;
+	position: relative;
+	top: calc(100% + 10px);
+	left: 0px;
+	color: grey;
+	text-transform: uppercase;
+	font-family: 'Basis';
+	letter-spacing: 1px;
+}
+
+.imageBlock {
+	margin: 40px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.imageSmall {
+	width: 100%;
+	height: 100%;
+}
+
+.imageSmallContainer {
+	display: inline-block;
+	width: 590px;
+	height: 100%;
+	max-width: 800px;
+}
+
+.label {
+	font-family: 'Basis';
+	border: 1px white solid;
+	padding: 5px 15px;
+	font-size: 14px;
+	text-align: center;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.text {
+	margin: 30px auto;
+	padding-left: 50px;
+	width: 900px;
+}
+
+.textLarge {
+	font-size: 30px;
+}
+
+.textSmall {
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+.kruzhokLink {
+	border-bottom: 1px solid black;
+	transition: opacity 0.5s ease;
+}
+
+.kruzhokLink:hover {
+	opacity: 0.5;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+	font-size: 18px;
+	width: 100%;
+	padding: 20px 40px;
+	text-transform: uppercase;
+}
+
+.textLink {
+	border-bottom: 1px solid black;
+	transition: opacity 0.5s ease;
+}
+
+.textLink:hover {
+	opacity: 0.5;
+}
+
+.left {
+	margin-right: 15px;
+}
+
+.right {
+	margin-left: 15px;
+}
+
+.smallContainer {
+	display: flex;
+}
+
+.small {
+	width: 49%;
+	width: calc((100% - 30px) / 2);
+	height: 500px;
+	margin-top: 30px;
+}
+  
+  /* MEDIA QUERIES */
+  
+@media (max-width: 720px) {
+	.video {
+		display: none;
+	}
+
+	.bgImage {
+		display: block;
+	}
+}
+
+@media (max-width: 850px) {
+	.sectionTitle {
+		font-size: 48px;
+	}
+
+	.sectionSubTitle {
+		font-size: 18px;
+	}
+
+	.imageC {
+		font-size: 8px;
+		text-align: center;
+	}
+
+	.nav {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		padding: 20px 40px;
+		height: 170px;
+		margin-bottom: 70px;
+	}
+
+	.bar a {
+		display: block;
+	}
+
+	.bar {
+		position: static;
+		transform: none;
+		margin-left: 30px;
+	}
+
+	.text {
+		margin: 15px auto;
+		padding: 10px;
+		width: 80%;
+	}
+
+	.textLarge {
+		font-size: 24px;
+	}
+
+	.textSmall {
+		font-size: 14px;
+		line-height: 1.6;
+	}
+
+	.footer {
+		font-size: 10px;
+	}
+
+	.smallContainer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.small {
+		width: 100%;
+		height: 500px;
+		margin-top: 30px;
+	}
+
+	.left {
+		margin-right: 0;
+	}
+
+	.right {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 1280px) {
+	.nav {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: baseline;
+		justify-content: space-between;
+		padding: 20px 40px;
+		height: 170px;
+		margin-bottom: 70px;
+	}
+
+	.bar {
+		position: static;
+		transform: none;
+		margin-left: 30px;
+	}
+
+	.text {
+		margin: 15px auto;
+		padding: 10px;
+		width: 80%;
+	}
+}
+
+body {
+	background-color: black;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+}
+
+.navMainPage {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+	padding: 20px 40px;
+}
+
+.mainBar {
+	font-size: 48px;
+	display: flex;
+	flex-direction: column;
+	line-height: 1.2;
+}
+
+.mainBar a {
+	transition: opacity 0.5s ease;
+}
+
+.mainBar a:hover {
+	opacity: 0.2;
+}
+
+.content {
+	font-family: 'Basis';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+}
+
+.overlay {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: -2;
+	pointer-events: none;
+}
+
+.video {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+}
+
+.title {
+	font-size: 160px;
+	text-align: center;
+	line-height: 1;
+}
+
+.player {
+	position: relative;
+}
+
+.subtitle {
+	font-size: 36px;
+	text-align: center;
+}
+
+.kruzhokLink {
+	border-bottom: 1px solid white;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 960px) {
+	.mainBar {
+		font-size: 30px;
+	}
+
+	.title {
+		font-size: 144px;
+	}
+
+	.subtitle {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 720px) {
+	.mainBar {
+		font-size: 36px;
+	}
+
+	.title {
+		font-size: 96px;
+	}
+
+	.subtitle {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 480px) {
+	.mainBar {
+		font-size: 30px;
+	}
+
+	.title {
+		font-size: 72px;
+	}
+
+	.subtitle {
+		font-size: 14px;
+	}
+}

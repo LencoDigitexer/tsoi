@@ -1,0 +1,80 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Music Card</title>
+    <link rel='stylesheet' href="css/style.css">
+</head>
+<body>
+    <h1 id="navigation">
+        <a href="/index.html" id="main">На главную</a>
+    </h1>
+    <template id="tmpl">
+        <div id="array">
+        </div>
+        <script>
+            var source, i, x = "";
+            source = {
+                "array": [{
+                    description: "Nightwish — финская метал-группа, исполняющая песни преимущественно на английском языке. Была образована Туомасом Холопайненом в 1996 году в городе Китеэ.",
+                    image: "images/nigtwish.jpg",
+                    link:"https://ru.wikipedia.org/wiki/Nightwish"},
+                    {
+                        description: "«ДДТ» (DDT) — советская и российская рок - группа, основанная летом 1980 года в Уфе.Лидер группы, автор большинства песен и единственный бессменный участник — Юрий Шевчук.",
+                        image: "images/DDT.jpg",
+                        link: "https://ru.wikipedia.org/wiki/ДДТ_(группа)"},
+                    {
+                        description: "Nautilus Pompilius («Наутилус Помпилиус») — советская и российская рок-группа, одна из известных во второй половине 1980-х и в середине 1990-х годов. Основана в Свердловске в 1982 году студентами Свердловского архитектурного института Вячеславом Бутусовым и Дмитрием Умецким. Дебютный альбом «Переезд» был записан в 1983 году.",
+                        image: "images/Nautilus.jpg",
+                        link: "https://ru.wikipedia.org/wiki/Nautilus_Pompilius"},
+                    {
+                        description: "Kiss (KISS, «Кисс», с англ. — «Поцелуй») — американская рок-группа, основанная в Нью-Йорке в январе 1973 года, играющая в жанрах глэм-рок и хард-рок. Широко известна развитием направления шок-рок, сценическими макияжами её участников, а также концертными шоу, сопровождающимися различными пиротехническими эффектами.",
+                        image: "images/KISS.jpg",
+                        link: "https://ru.wikipedia.org/wiki/Kiss"},
+                    {
+                        description: "Creedence Clearwater Revival (рус. Криденс клиэруотер ривайвал; сокращённо CCR, часто Creedence) — американская рок-группа, образовавшаяся в 1967 году и за пять лет существования добившаяся всемирного успеха и признания критиками. CCR, возникшие в Сан-Франциско, с самого начала находились под влиянием свомп-блюза.",
+                        image: "images/CCR.jpeg",
+                        link: "https://ru.wikipedia.org/wiki/Creedence_Clearwater_Revival"},
+                    {
+                        description: "Thirty Seconds to Mars (с англ. — «Тридцать секунд до Марса») — американская рок-группа из Лос-Анджелеса, штат Калифорния, исполняющая альтернативный рок. Основана в 1998 году братьями Джаредом и Шенноном Лето.",
+                        image: "images/30mars.jpeg",
+                        link: "https://ru.wikipedia.org/wiki/Thirty_Seconds_to_Mars"},
+                    {
+                        description: "Aimer (エメ EME , [EME]) - японский поп-певец и лирик, подписанный на SME Records и управляемый fourseam. Ее имя происходит от глагола Aimer на французском языке, что означает любить.",
+                        image: "images/Aimer.jpg",
+                        link: "https://en.wikipedia.org/wiki/Aimer"},
+                    {
+                        description: "Kalafina (яп. カラフィナ Карафина) — японская группа, основанная композитором Юки Кадзиурой в 2007 году для исполнения саундтреков к аниме Kara no Kyoukai (яп. 空の境界, «Граница пустоты»).",
+                        image: "images/Kalafina.jpg",
+                        link: "https://ru.wikipedia.org/wiki/Kalafina"},
+                    {
+                        description: "Кино — одна из самых популярных советских рок-групп 1980-х годов. Лидером и автором почти всех текстов и музыки неизменно оставался Виктор Цой, после смерти которого коллектив, выпустивший, в общей сложности, за девять лет на студийных альбомах более ста песен, несколько сборников и концертных записей, а также большое количество неофициальных бутлегов, прекратил существование.",
+                        image: "images/sun.jpg",
+                        link: "https://ru.wikipedia.org/wiki/Кино_(группа)"},
+                    {
+                        description: "Ария — советская и российская хеви-метал-группа. Одна из самых успешных русских рок-групп, при этом — это одна из немногих российских групп, достигших серьёзного коммерческого и творческого успехов и популярности за пределами поклонников хэви-метала. Лауреат премии Fuzz 2007 года как лучшая live-группа.",
+                        image: "images/Aria.jpg",
+                        link: "https://ru.wikipedia.org/wiki/Ария_(группа)"},
+                    {
+                        description: "Мельница — российская фолк-рок-группа из Москвы. Основана 15 октября 1999 года музыкантами распавшейся группы «Тиль Уленшпигель». Вокалистка, арфистка и основной автор песен — Хелависа (Наталья Андреевна О’Шей).",
+                        image: "images/mill.jpg",
+                        link: "https://ru.wikipedia.org/wiki/Мельница_(группа)"},
+                    {
+                        description: "AC/DC (рус. Эй-си/ди-си; сокр. от англ. alternating current/direct current «переменный ток/постоянный ток») — австралийская рок-группа, сформированная в Сиднее в ноябре 1973 года выходцами из Шотландии, братьями Малькольмом и Ангусом Янгами.",
+                        image: "images/AC.jpeg",
+                        link: "https://ru.wikipedia.org/wiki/AC/DC"}
+                ]
+            }
+            for (i in source.array) {
+                x += "<li style='background:url(" + source.array[i].image + ")no-repeat;  background-size: contain;'><p style='margin-top:20em; color:white;'><a href="+ source.array[i].link +">" + source.array[i].description + "</a></p></li > ";
+            }
+
+            document.getElementById("array").innerHTML = x;
+        </script>
+    </template>
+    <script>
+        var template = document.getElementById('tmpl');
+        var templateContent = template.content;
+        document.body.appendChild(templateContent);
+    </script>
+</body>
+</html>
