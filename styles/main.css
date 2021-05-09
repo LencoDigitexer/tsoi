@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'Basis';
+    font-weight: medium;
+    src: url(fonts/basis_medium.woff);
+  }
+  
+  @font-face {
+    font-family: 'Basis';
+    font-weight: normal;
+    src: url(fonts/basis_regular.woff);
+  }
+  
+  @font-face {
+    font-family: 'William';
+    font-weight: normal;
+    src: url(fonts/william.woff);
+  }
+  
+  html {
+      min-height: 100vh;
+  }
+  
+  body {
+      min-height: 100vh;
+      font-family: 'Basis';
+      line-height: 1.4;
+      -webkit-font-smoothing: antialiased;
+  }
+  
+  * {
+      box-sizing: border-box;
+  }
+  
+  a {
+      text-decoration: none;
+      color: inherit;
+  }
+  
+  .basis {
+      font-family: 'Basis';
+      font-weight: normal;
+  }
+  
+  .william {
+      font-family: 'William';
+      font-weight: normal;
+  }
+  
+  
+  
+  .nav {
+      display: flex;
+      align-items: center;
+      padding: 20px 40px;
+      height: 70px;
+      margin-bottom: 70px;
+  }
+  
+  .logo {
+      font-size: 36px;
+      font-weight: 700;
+  }
+  
+  .bar {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      font-size: 18px;
+      text-transform: uppercase;
+  }
+  
+  .bar a {
+      display: inline-block;
+      margin: 0 20px;
+      transition: opacity 0.5s ease;
+  }
+  
+  .bar a:hover {
+      opacity: 0.3;
+  }
+  
+  .active {
+      font-size: 30px;
+      border-bottom: 1px black solid;
+  }
+  
+  .content {
+      max-width: 1200px;
+      font-family: 'William';
+      line-height: 1.4;
+      margin: 0 auto;
+  }
+  
+  .coverImage {
+      display: block;
+      margin: 40px auto 5px auto;
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+  }
+  
+  .overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: background-color 0.5s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .bgImage {
+      width: 100vw;
+      height: 100vh;
+      background-image: url(../images/DSC_1792.jpg);
+    background-size: cover;
+    background-position: center;
+      display: none;
+  }
+  
+  .overlay:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .sectionTitle {
+      width: 80%;
+      font-family: 'William';
+      font-size: 84px;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 1;
+  }
+  
+  .sectionSubTitle {
+      font-family: 'William';
+      font-size: 30px;
+      text-align: center;
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 30px;
+  }
+  
+  .imageC {
+      font-size: 12px;
+      position: relative;
+      top: calc(100% + 10px);
+      left: 0px;
+      color: grey;
+      text-transform: uppercase;
+      font-family: 'Basis';
+      letter-spacing: 1px;
+  }
+  
+  .imageBlock {
+      margin: 40px auto;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .imageSmall {
+      width: 100%;
+      height: 100%;
+  }
+  
+  .imageSmallContainer {
+      display: inline-block;
+      width: 590px;
+      height: 100%;
+      max-width: 800px;
+  }
+  
+  .label {
+      font-family: 'Basis';
+      border: 1px white solid;
+      padding: 5px 15px;
+      font-size: 14px;
+      text-align: center;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+  }
+  
+  .text {
+      margin: 30px auto;
+      padding-left: 50px;
+      width: 900px;
+  }
+  
+  .textLarge {
+      font-size: 30px;
+  }
+  
+  .textSmall {
+      font-size: 18px;
+      line-height: 1.6;
+  }
+  
+  .kruzhokLink {
+      border-bottom: 1px solid black;
+      transition: opacity 0.5s ease;
+  }
+  
+  .kruzhokLink:hover {
+      opacity: 0.5;
+  }
+  
+  .footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 100px;
+      font-size: 18px;
+      width: 100%;
+      padding: 20px 40px;
+      text-transform: uppercase;
+  }
+  
+  .textLink {
+      border-bottom: 1px solid black;
+      transition: opacity 0.5s ease;
+  }
+  
+  .textLink:hover {
+      opacity: 0.5;
+  }
+  
+  .left {
+      margin-right: 15px;
+  }
+  
+  .right {
+      margin-left: 15px;
+  }
+  
+  .smallContainer {
+      display: flex;
+  }
+  
+  .small {
+      width: 49%;
+      width: calc((100% - 30px) / 2);
+      height: 500px;
+      margin-top: 30px;
+  }
+  
+  /* MEDIA QUERIES */
+  
+  @media (max-width: 720px) {
+      .video {
+          display: none;
+      }
+  
+      .bgImage {
+          display: block;
+      }
+  }
+  
+  @media (max-width: 850px) {
+      .sectionTitle {
+          font-size: 48px;
+      }
+  
+      .sectionSubTitle {
+          font-size: 18px;
+      }
+  
+      .imageC {
+          font-size: 8px;
+          text-align: center;
+      }
+  
+      .nav {
+          display: flex;
+          align-items: baseline;
+          justify-content: space-between;
+          padding: 20px 40px;
+          height: 170px;
+          margin-bottom: 70px;
+      }
+  
+      .bar a {
+          display: block;
+      }
+  
+      .bar {
+          position: static;
+          transform: none;
+          margin-left: 30px;
+      }
+  
+      .text {
+          margin: 15px auto;
+          padding: 10px;
+          width: 80%;
+      }
+  
+      .textLarge {
+          font-size: 24px;
+      }
+  
+      .textSmall {
+          font-size: 14px;
+          line-height: 1.6;
+      }
+  
+      .footer {
+          font-size: 10px;
+      }
+  
+      .smallContainer {
+          display: flex;
+          flex-direction: column;
+      }
+  
+      .small {
+          width: 100%;
+          height: 500px;
+          margin-top: 30px;
+      }
+  
+      .left {
+          margin-right: 0;
+      }
+  
+      .right {
+          margin-left: 0;
+      }
+  }
+  
+  @media (max-width: 1280px) {
+      .nav {
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: baseline;
+          justify-content: space-between;
+          padding: 20px 40px;
+          height: 170px;
+          margin-bottom: 70px;
+      }
+  
+      .bar {
+          position: static;
+          transform: none;
+          margin-left: 30px;
+      }
+  
+      .text {
+          margin: 15px auto;
+          padding: 10px;
+          width: 80%;
+      }
+  }
