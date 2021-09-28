@@ -297,9 +297,7 @@ a {
   /* MEDIA QUERIES */
   
 @media (max-width: 720px) {
-	.video {
-		display: none;
-	}
+	
 
 	.bgImage {
 		display: block;
